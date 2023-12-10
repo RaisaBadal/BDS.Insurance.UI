@@ -3,17 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BDS.Insurance.UI", "BDS.Insurance.UI\BDS.Insurance.UI.csproj", "{FCD945CD-0249-43E4-B062-4A91A38B5A80}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BDS.Insurance.UI", "BDS.Insurance.UI\BDS.Insurance.UI.csproj", "{FCD945CD-0249-43E4-B062-4A91A38B5A80}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BDS.Insurance.Core", "BDS.Insurance.Core\BDS.Insurance.Core.csproj", "{52701642-3620-4453-AE0F-E5FF611E97FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BDS.Insurance.Core", "BDS.Insurance.Core\BDS.Insurance.Core.csproj", "{52701642-3620-4453-AE0F-E5FF611E97FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BDS.Insurance.Infrastructure", "BDS.Insurance.Infrastructure\BDS.Insurance.Infrastructure.csproj", "{7E219F6C-4832-4396-8E1D-E9B7E3D4C3EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BDS.Insurance.Infrastructure", "BDS.Insurance.Infrastructure\BDS.Insurance.Infrastructure.csproj", "{7E219F6C-4832-4396-8E1D-E9B7E3D4C3EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BDS.Insurance.Presentation", "BDS.Insurance.Presentation\BDS.Insurance.Presentation.csproj", "{ABAC7EA2-966D-4A93-9FBB-FF1D6E771ADF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BDS.Insurance.Presentation", "BDS.Insurance.Presentation\BDS.Insurance.Presentation.csproj", "{ABAC7EA2-966D-4A93-9FBB-FF1D6E771ADF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BDS.Insurance.DataSource", "BDS.Insurance.DataSource\BDS.Insurance.DataSource.csproj", "{B8355D89-087C-494B-8250-959AA1ADB58F}"
-EndProject
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "BDS.Insurance.SQL", "BDS.Insurance.SQL\BDS.Insurance.SQL.sqlproj", "{FF62D183-5C1C-4E28-8A7A-B5C5047A5463}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BDS.Insurance.DataSource", "BDS.Insurance.DataSource\BDS.Insurance.DataSource.csproj", "{B8355D89-087C-494B-8250-959AA1ADB58F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,12 +39,6 @@ Global
 		{B8355D89-087C-494B-8250-959AA1ADB58F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8355D89-087C-494B-8250-959AA1ADB58F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8355D89-087C-494B-8250-959AA1ADB58F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FF62D183-5C1C-4E28-8A7A-B5C5047A5463}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FF62D183-5C1C-4E28-8A7A-B5C5047A5463}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FF62D183-5C1C-4E28-8A7A-B5C5047A5463}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{FF62D183-5C1C-4E28-8A7A-B5C5047A5463}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FF62D183-5C1C-4E28-8A7A-B5C5047A5463}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FF62D183-5C1C-4E28-8A7A-B5C5047A5463}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
