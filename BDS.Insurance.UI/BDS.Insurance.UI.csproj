@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.14" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.14" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.14" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.14">
@@ -23,6 +24,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BDS.Insurance.Core\BDS.Insurance.Core.csproj" />
+    <ProjectReference Include="..\BDS.Insurance.Infrastructure\BDS.Insurance.Infrastructure.csproj" />
+    <ProjectReference Include="..\BDS.Insurance.Presentation\BDS.Insurance.Presentation.csproj" />
   </ItemGroup>
 
 </Project>

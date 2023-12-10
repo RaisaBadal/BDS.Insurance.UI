@@ -4,6 +4,7 @@ using BDS.Insurance.Core.DBContexti;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BDS.Insurance.Core.Migrations
 {
     [DbContext(typeof(DbBds))]
-    partial class DbBdsModelSnapshot : ModelSnapshot
+    [Migration("20231209194602_ahsg")]
+    partial class ahsg
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -136,30 +139,6 @@ namespace BDS.Insurance.Core.Migrations
                     b.ToTable("Policy");
                 });
 
-            modelBuilder.Entity("BDS.Insurance.Core.Models.PolicySchedule", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime>("Date")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("PolicyId")
-                        .HasColumnType("int");
-
-                    b.Property<decimal>("amount")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("PolicyId");
-
-                    b.ToTable("PolicySchedule");
-                });
-
             modelBuilder.Entity("BDS.Insurance.Core.Models.User", b =>
                 {
                     b.Property<int>("Id")
@@ -251,17 +230,6 @@ namespace BDS.Insurance.Core.Migrations
                     b.Navigation("car");
                 });
 
-            modelBuilder.Entity("BDS.Insurance.Core.Models.PolicySchedule", b =>
-                {
-                    b.HasOne("BDS.Insurance.Core.Models.Policy", "policy")
-                        .WithMany("Schedules")
-                        .HasForeignKey("PolicyId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("policy");
-                });
-
             modelBuilder.Entity("BDS.Insurance.Core.Models._2StepVerification", b =>
                 {
                     b.HasOne("BDS.Insurance.Core.Models.User", "user")
@@ -277,11 +245,6 @@ namespace BDS.Insurance.Core.Migrations
                 {
                     b.Navigation("policy")
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("BDS.Insurance.Core.Models.Policy", b =>
-                {
-                    b.Navigation("Schedules");
                 });
 
             modelBuilder.Entity("BDS.Insurance.Core.Models.User", b =>

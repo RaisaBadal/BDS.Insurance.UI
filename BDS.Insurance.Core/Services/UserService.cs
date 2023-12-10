@@ -1,4 +1,5 @@
 ﻿using BDS.Insurance.Core.Interfaces;
+using BDS.Insurance.Core.Models;
 using BDS.Insurance.DataSource.RequestAndResponce;
 using System;
 using System.Collections.Generic;
@@ -15,10 +16,30 @@ namespace BDS.Insurance.Core.Services
         {
             this.userrepos = userrepos;
         }
+
+        public List<User> GetAllUser()
+        {
+           return userrepos.GetAllUser();
+        }
+
+        public GetUserByIdResponce GetUserById(UserID userid)
+        {
+            return userrepos.GetUserById(userid);
+        }
+
         public bool InsertUser(InsertUser insertUser)
         {
             return userrepos.InsertUser(insertUser);
         }
 
+        public bool SignIn(UserSignIn usersignIn)
+        {
+            return userrepos.SignIn(usersignIn);
+        }
+
+        public string Verification(VerificationRequest verRequest)
+        {
+            return userrepos.Verification(verRequest);
+        }
     }
 }

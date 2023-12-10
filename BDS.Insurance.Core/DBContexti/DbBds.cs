@@ -13,6 +13,12 @@ namespace BDS.Insurance.Core.DBContexti
     {
         public DbBds(DbContextOptions<DbBds>ops):base(ops) { }
         public DbSet<User> Users { get; set; }
+        public DbSet<Car> Cars { get; set; }
+        public DbSet<Policy> Policys { get; set; }
+        public DbSet<Error> Errors { get; set; }
+        public DbSet<Log> Logs { get; set; }
+        public DbSet<_2StepVerification> _2StepVerification { get; set; }
+        public DbSet<PolicySchedule> PolicySchedules { get; set; }
 
     }
 }
